@@ -19,12 +19,13 @@ public class GenerateExtentReports
 	public static ExtentHtmlReporter htmlReporter;
 	public static ExtentReports extent;
 	public static ExtentTest test;
+	static LoadProperties prop=new LoadProperties();
 
 
 	@BeforeSuite
 	public void setupReport()
 	{
-		htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir")+"/test-output/AutomationResult.html");
+		htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir")+prop.getProperty("resultPath"));
 		extent= new ExtentReports();
 		extent.attachReporter(htmlReporter);
 

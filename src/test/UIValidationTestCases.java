@@ -17,18 +17,27 @@ import model.Record;
 import services.CompareValues;
 import services.ExcelProcessor;
 import services.GenerateExtentReports;
+import services.LoadProperties;
 
 public class UIValidationTestCases extends GenerateExtentReports
 {
 	public static WebDriver Browser_session;
 
+	static LoadProperties prop=new LoadProperties();
+
 	/**
 	 *To Setup Common Browser for All Windows Validation
+	 * @throws IOException
 	 */
-	public static void setupBrowser()
+	public static void setupBrowser() throws IOException
 	{
+		/*Properties prop=new Properties();
+		InputStream input=new FileInputStream("TestData\\path.properties");
+		prop.load(input);*/
+
+
 		//Setting Web Drivers
-		System.setProperty("webdriver.chrome.driver","C:\\Work\\SeleniumWebDriver\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver",prop.getProperty("chromeDriver"));
 		Browser_session=new ChromeDriver();
 
 
@@ -36,16 +45,22 @@ public class UIValidationTestCases extends GenerateExtentReports
 
 	/**
 	 * Before Class Initialization
+	 * @throws IOException
 	 */
 	@BeforeClass
-	public  void  beforeSuite()
+	public  void  beforeSuite() throws IOException
 	{
 
 		setupBrowser();
 
+		/*	Properties prop=new Properties();
+		InputStream input=new FileInputStream("TestData\\path.properties");
+		prop.load(input);*/
+
 		//Opening New Page
 
-		Browser_session.get("https://www.facebook.com/");
+		//Browser_session.get("https://www.facebook.com/");
+		Browser_session.get(prop.getProperty("url"));
 		Browser_session.findElement(By.tagName("html")).sendKeys(Keys.F11);
 		//Browser_session.manage().window().fullscreen();
 
@@ -64,7 +79,7 @@ public class UIValidationTestCases extends GenerateExtentReports
 		test=extent.createTest("Validate Font Size");
 
 		//Storing Excel Data As LinkedHashMap
-		LinkedHashMap dataMap=ExcelProcessor.readExcel("C:\\Workspace\\Personal\\SeleniumUITesting\\TestData\\Test.xlsx","Test");
+		LinkedHashMap dataMap=ExcelProcessor.readExcel(prop.getProperty("ExcelPath"),"Test");
 
 		for(Object key :dataMap.keySet())
 		{
@@ -91,7 +106,7 @@ public class UIValidationTestCases extends GenerateExtentReports
 		test=extent.createTest("Validate Font Family");
 
 		//Storing Excel Data As LinkedHashMap
-		LinkedHashMap dataMap=ExcelProcessor.readExcel("C:\\Workspace\\Personal\\SeleniumUITesting\\TestData\\Test.xlsx","Test");
+		LinkedHashMap dataMap=ExcelProcessor.readExcel(prop.getProperty("ExcelPath"),"Test");
 
 
 		for(Object key :dataMap.keySet())
@@ -117,7 +132,7 @@ public class UIValidationTestCases extends GenerateExtentReports
 		test=extent.createTest("Validate Color");
 
 		//Storing Excel Data As LinkedHashMap
-		LinkedHashMap dataMap=ExcelProcessor.readExcel("C:\\Workspace\\Personal\\SeleniumUITesting\\TestData\\Test.xlsx","Test");
+		LinkedHashMap dataMap=ExcelProcessor.readExcel(prop.getProperty("ExcelPath"),"Test");
 
 
 		for(Object key :dataMap.keySet())
@@ -143,7 +158,7 @@ public class UIValidationTestCases extends GenerateExtentReports
 		test=extent.createTest("Validate Padding Top");
 
 		//Storing Excel Data As LinkedHashMap
-		LinkedHashMap dataMap=ExcelProcessor.readExcel("C:\\Workspace\\Personal\\SeleniumUITesting\\TestData\\Test.xlsx","Test");
+		LinkedHashMap dataMap=ExcelProcessor.readExcel(prop.getProperty("ExcelPath"),"Test");
 
 
 		for(Object key :dataMap.keySet())
@@ -170,7 +185,7 @@ public class UIValidationTestCases extends GenerateExtentReports
 		test=extent.createTest("Validate Padding Bottom");
 
 		//Storing Excel Data As LinkedHashMap
-		LinkedHashMap dataMap=ExcelProcessor.readExcel("C:\\Workspace\\Personal\\SeleniumUITesting\\TestData\\Test.xlsx","Test");
+		LinkedHashMap dataMap=ExcelProcessor.readExcel(prop.getProperty("ExcelPath"),"Test");
 
 
 		for(Object key :dataMap.keySet())
@@ -196,7 +211,7 @@ public class UIValidationTestCases extends GenerateExtentReports
 		test=extent.createTest("Validate Padding Left");
 
 		//Storing Excel Data As LinkedHashMap
-		LinkedHashMap dataMap=ExcelProcessor.readExcel("C:\\Workspace\\Personal\\SeleniumUITesting\\TestData\\Test.xlsx","Test");
+		LinkedHashMap dataMap=ExcelProcessor.readExcel(prop.getProperty("ExcelPath"),"Test");
 
 
 		for(Object key :dataMap.keySet())
@@ -222,7 +237,7 @@ public class UIValidationTestCases extends GenerateExtentReports
 		test=extent.createTest("Validate Padding Right");
 
 		//Storing Excel Data As LinkedHashMap
-		LinkedHashMap dataMap=ExcelProcessor.readExcel("C:\\Workspace\\Personal\\SeleniumUITesting\\TestData\\Test.xlsx","Test");
+		LinkedHashMap dataMap=ExcelProcessor.readExcel(prop.getProperty("ExcelPath"),"Test");
 
 
 		for(Object key :dataMap.keySet())
@@ -247,7 +262,7 @@ public class UIValidationTestCases extends GenerateExtentReports
 		test=extent.createTest("Validate Location");
 
 		//Storing Excel Data As LinkedHashMap
-		LinkedHashMap dataMap=ExcelProcessor.readExcel("C:\\Workspace\\Personal\\SeleniumUITesting\\TestData\\Test.xlsx","Test");
+		LinkedHashMap dataMap=ExcelProcessor.readExcel(prop.getProperty("ExcelPath"),"Test");
 
 
 		for(Object key :dataMap.keySet())
