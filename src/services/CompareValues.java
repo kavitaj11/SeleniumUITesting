@@ -222,6 +222,7 @@ public class CompareValues {
 		}
 	}
 
+
 	/**
 	 *
 	 * @param actualSizeValue-Actual Value of Height or Width
@@ -233,73 +234,7 @@ public class CompareValues {
 	 *
 	 * This function is created to verify all aspects at one go.
 	 * In future we can add more function from above
-	 *//*
-	//@Test
-	public static void verifyAll(Optional<String> actualSizeValue ,Optional<String> expectedSizeValue,Optional<String> sizeMeasurenmentId,
-			Optional<String> actualText,Optional<String> expectedText,Optional<String> textMeasurenmentId,
-			Optional<String> actualColor,Optional<String> expectedColor,
-			Optional<String>actualPadding,Optional<String> expectedPadding,Optional<String> inclination,
-			Optional<String> actualFontFamily,Optional<String> expectedFontFamily,
-			Optional<String> actualFontSize,Optional<String> expectedFontSize)
-	{
-		MyLogger.setupLogger();
-		String  aSize=actualSizeValue.isPresent()?actualSizeValue.get():null;
-		String  eSize=expectedSizeValue.isPresent()?expectedSizeValue.get():null;
-		String  sMeasurementId=sizeMeasurenmentId.isPresent()?sizeMeasurenmentId.get():null;
-
-		String  aText=actualText.isPresent()?actualText.get():null;
-		String  eText=expectedText.isPresent()?expectedText.get():null;
-		String  tMeasurementId=textMeasurenmentId.isPresent()?textMeasurenmentId.get():null;
-
-		String  aColor=actualColor.isPresent()?actualColor.get():null;
-		String  eColor=expectedColor.isPresent()?expectedColor.get():null;
-
-		String  aPadding=actualPadding.isPresent()?actualPadding.get():null;
-		String  ePadding=expectedPadding.isPresent()?expectedPadding.get():null;
-		String  pInclination=inclination.isPresent()?inclination.get():null;
-
-		String  aFontFamily=actualFontFamily.isPresent()?actualFontFamily.get():null;
-		String  eFontFamily=expectedFontFamily.isPresent()?expectedFontFamily.get():null;
-
-		String  aFontSize=actualFontSize.isPresent()?actualFontSize.get():null;
-		String  eFontSize=expectedFontSize.isPresent()?expectedFontSize.get():null;
-
-
-		//Verify Size
-		verifySize(aSize, eSize, sMeasurementId);
-
-		//Verify Text
-		verifyText(aText,eText,tMeasurementId);
-
-		//Verify Color
-		verifyColor(aColor,eColor);
-
-		//Verify Padding
-		verifyPadding(aPadding,ePadding,pInclination);
-
-		//Verify Font Family
-		verifyFontFamily(aFontFamily,eFontFamily);
-
-
-		//Verify Font Size
-		verifyFontSize(aFontSize,eFontSize);
-
-
-
-	}
-
-	  /**
-	  *
-	  * @param actualSizeValue-Actual Value of Height or Width
-	  * @param expectedSizeValue-Expected Value of Height or Width
-	  * @param sizeMeasurenmentId-What we are measuring eg Height or width
-	  * @param actualText-Actual Text
-	  * @param expectedText-Expected text
-	  * @param textMeasurenmentId-What we are measuring eg Text Of what element.
-	  *
-	  * This function is created to verify all aspects at one go.
-	  * In future we can add more function from above
-	  */
+	 */
 
 
 	public void verifyAll(String actualSizeValue ,String expectedSizeValue,String sizeMeasurenmentId,
@@ -353,6 +288,63 @@ public class CompareValues {
 
 
 	}
+
+	/**
+	 *
+	 * @param actualX: Actual X Location
+	 * @param expectedX : Expected X Location
+	 * @return True:Pass and False:Fail
+	 */
+	public static boolean verifyXLocation(int actualX,int expectedX)
+	{
+		MyLogger.setupLogger();
+		if (actualX==0||expectedX==0)
+		{
+			logr.info("No Validation Done For X Location");
+			System.out.println("No Validation Done For  X Location");
+		}
+		if (actualX==expectedX)
+		{
+			logr.info("Passed-X Location   Matched  ");
+			System.out.println("X Location  Matched  ");
+			return true;
+		}
+		else
+		{
+			logr.severe("Failed-X Location Mismatched  ");
+			System.out.println("X Location Mismatched  ");
+			return false;
+		}
+	}
+
+	/**
+	 *
+	 * @param actualY: Actual Y Location
+	 * @param expectedY : Expected Y Location
+	 * @return True:Pass and False:Fail
+	 */
+	public static boolean verifyYLocation(int actualY,int expectedY)
+	{
+		MyLogger.setupLogger();
+		if (actualY==0||expectedY==0)
+		{
+			logr.info("No Validation Done For Y Location");
+			System.out.println("No Validation Done For  Y Location");
+		}
+		if (actualY==expectedY)
+		{
+			logr.info("Passed-Y Location   Matched  ");
+			System.out.println("Y Location  Matched  ");
+			return true;
+		}
+		else
+		{
+			logr.severe("Failed-Y Location Mismatched  ");
+			System.out.println("Y Location Mismatched  ");
+			return false;
+		}
+	}
+
 
 
 }

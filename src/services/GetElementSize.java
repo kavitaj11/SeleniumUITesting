@@ -1,5 +1,6 @@
 package services;
 
+import org.openqa.selenium.Point;
 import org.openqa.selenium.WebElement;
 
 /**
@@ -110,5 +111,36 @@ public class GetElementSize {
 		return returnValue;
 	}
 
+
+	/**
+	 *
+	 * @param element:webElement
+	 * @return X point of Web Element
+	 */
+	public int getLocationX(WebElement element)
+	{
+		return element.getLocation().getX();
+
+	}
+
+	/**
+	 *
+	 * @param element:WebElement
+	 * @return Y point of Web Element
+	 */
+	public int getLocationY(WebElement element)
+	{
+		return element.getLocation().getY();
+	}
+
+	/**
+	 *
+	 * @param element
+	 * @return (X,Y) Co-ordinate of WebElement
+	 */
+	public Point getLocationWebElement(WebElement element)
+	{
+		return element.getLocation();
+	}
 
 }

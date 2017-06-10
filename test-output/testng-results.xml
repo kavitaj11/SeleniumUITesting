@@ -1,130 +1,145 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
+<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="30472" started-at="2017-05-28T15:20:58Z" finished-at="2017-05-28T15:21:28Z">
+  <suite name="Suite" duration-ms="27193" started-at="2017-06-10T16:37:44Z" finished-at="2017-06-10T16:38:11Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="30472" started-at="2017-05-28T15:20:58Z" finished-at="2017-05-28T15:21:28Z">
+    <test name="Test" duration-ms="27193" started-at="2017-06-10T16:37:44Z" finished-at="2017-06-10T16:38:11Z">
       <class name="test.UIValidationTestCases">
-        <test-method status="PASS" signature="setupReport()[pri:0, instance:test.UIValidationTestCases@5f341870]" name="setupReport" is-config="true" duration-ms="268" started-at="2017-05-28T20:50:57Z" finished-at="2017-05-28T20:50:58Z">
+        <test-method status="PASS" signature="setupReport()[pri:0, instance:test.UIValidationTestCases@553f17c]" name="setupReport" is-config="true" duration-ms="199" started-at="2017-06-10T22:07:44Z" finished-at="2017-06-10T22:07:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupReport -->
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:test.UIValidationTestCases@5f341870]" name="beforeSuite" is-config="true" duration-ms="26238" started-at="2017-05-28T20:50:58Z" finished-at="2017-05-28T20:51:24Z">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:test.UIValidationTestCases@553f17c]" name="beforeSuite" is-config="true" duration-ms="26087" started-at="2017-06-10T22:07:44Z" finished-at="2017-06-10T22:08:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="validateColor()[pri:0, instance:test.UIValidationTestCases@5f341870]" name="validateColor" duration-ms="955" started-at="2017-05-28T20:51:24Z" finished-at="2017-05-28T20:51:25Z">
+        <test-method status="PASS" signature="validateColor()[pri:0, instance:test.UIValidationTestCases@553f17c]" name="validateColor" duration-ms="596" started-at="2017-06-10T22:08:10Z" finished-at="2017-06-10T22:08:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateColor -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:test.UIValidationTestCases@5f341870]" name="getResult" is-config="true" duration-ms="10" started-at="2017-05-28T20:51:25Z" finished-at="2017-05-28T20:51:25Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:test.UIValidationTestCases@553f17c]" name="getResult" is-config="true" duration-ms="9" started-at="2017-06-10T22:08:11Z" finished-at="2017-06-10T22:08:11Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=validateColor status=SUCCESS method=UIValidationTestCases.validateColor()[pri:0, instance:test.UIValidationTestCases@5f341870] output={null}]]]>
+                <![CDATA[[TestResult name=validateColor status=SUCCESS method=UIValidationTestCases.validateColor()[pri:0, instance:test.UIValidationTestCases@553f17c] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="validateFontFamily1()[pri:0, instance:test.UIValidationTestCases@5f341870]" name="validateFontFamily1" duration-ms="187" started-at="2017-05-28T20:51:25Z" finished-at="2017-05-28T20:51:25Z">
+        <test-method status="PASS" signature="validateFontFamily1()[pri:0, instance:test.UIValidationTestCases@553f17c]" name="validateFontFamily1" duration-ms="42" started-at="2017-06-10T22:08:11Z" finished-at="2017-06-10T22:08:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateFontFamily1 -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:test.UIValidationTestCases@5f341870]" name="getResult" is-config="true" duration-ms="1" started-at="2017-05-28T20:51:25Z" finished-at="2017-05-28T20:51:25Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:test.UIValidationTestCases@553f17c]" name="getResult" is-config="true" duration-ms="0" started-at="2017-06-10T22:08:11Z" finished-at="2017-06-10T22:08:11Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=validateFontFamily1 status=SUCCESS method=UIValidationTestCases.validateFontFamily1()[pri:0, instance:test.UIValidationTestCases@5f341870] output={null}]]]>
+                <![CDATA[[TestResult name=validateFontFamily1 status=SUCCESS method=UIValidationTestCases.validateFontFamily1()[pri:0, instance:test.UIValidationTestCases@553f17c] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="validateFontSize()[pri:0, instance:test.UIValidationTestCases@5f341870]" name="validateFontSize" duration-ms="184" started-at="2017-05-28T20:51:25Z" finished-at="2017-05-28T20:51:25Z">
+        <test-method status="PASS" signature="validateFontSize()[pri:0, instance:test.UIValidationTestCases@553f17c]" name="validateFontSize" duration-ms="38" started-at="2017-06-10T22:08:11Z" finished-at="2017-06-10T22:08:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateFontSize -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:test.UIValidationTestCases@5f341870]" name="getResult" is-config="true" duration-ms="1" started-at="2017-05-28T20:51:25Z" finished-at="2017-05-28T20:51:25Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:test.UIValidationTestCases@553f17c]" name="getResult" is-config="true" duration-ms="4" started-at="2017-06-10T22:08:11Z" finished-at="2017-06-10T22:08:11Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=validateFontSize status=SUCCESS method=UIValidationTestCases.validateFontSize()[pri:0, instance:test.UIValidationTestCases@5f341870] output={null}]]]>
+                <![CDATA[[TestResult name=validateFontSize status=SUCCESS method=UIValidationTestCases.validateFontSize()[pri:0, instance:test.UIValidationTestCases@553f17c] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="validatePaddingBottom()[pri:0, instance:test.UIValidationTestCases@5f341870]" name="validatePaddingBottom" duration-ms="175" started-at="2017-05-28T20:51:25Z" finished-at="2017-05-28T20:51:25Z">
+        <test-method status="PASS" signature="validateLocation()[pri:0, instance:test.UIValidationTestCases@553f17c]" name="validateLocation" duration-ms="78" started-at="2017-06-10T22:08:11Z" finished-at="2017-06-10T22:08:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLocation -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:test.UIValidationTestCases@553f17c]" name="getResult" is-config="true" duration-ms="0" started-at="2017-06-10T22:08:11Z" finished-at="2017-06-10T22:08:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateLocation status=SUCCESS method=UIValidationTestCases.validateLocation()[pri:0, instance:test.UIValidationTestCases@553f17c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="validatePaddingBottom()[pri:0, instance:test.UIValidationTestCases@553f17c]" name="validatePaddingBottom" duration-ms="65" started-at="2017-06-10T22:08:11Z" finished-at="2017-06-10T22:08:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validatePaddingBottom -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:test.UIValidationTestCases@5f341870]" name="getResult" is-config="true" duration-ms="1" started-at="2017-05-28T20:51:25Z" finished-at="2017-05-28T20:51:25Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=validatePaddingBottom status=SUCCESS method=UIValidationTestCases.validatePaddingBottom()[pri:0, instance:test.UIValidationTestCases@5f341870] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="validatePaddingLeft()[pri:0, instance:test.UIValidationTestCases@5f341870]" name="validatePaddingLeft" duration-ms="250" started-at="2017-05-28T20:51:25Z" finished-at="2017-05-28T20:51:26Z">
+        <test-method status="PASS" signature="validatePaddingLeft()[pri:0, instance:test.UIValidationTestCases@553f17c]" name="validatePaddingLeft" duration-ms="43" started-at="2017-06-10T22:08:11Z" finished-at="2017-06-10T22:08:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validatePaddingLeft -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:test.UIValidationTestCases@5f341870]" name="getResult" is-config="true" duration-ms="0" started-at="2017-05-28T20:51:26Z" finished-at="2017-05-28T20:51:26Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:test.UIValidationTestCases@553f17c]" name="getResult" is-config="true" duration-ms="0" started-at="2017-06-10T22:08:11Z" finished-at="2017-06-10T22:08:11Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=validatePaddingLeft status=SUCCESS method=UIValidationTestCases.validatePaddingLeft()[pri:0, instance:test.UIValidationTestCases@5f341870] output={null}]]]>
+                <![CDATA[[TestResult name=validatePaddingBottom status=SUCCESS method=UIValidationTestCases.validatePaddingBottom()[pri:0, instance:test.UIValidationTestCases@553f17c] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="validatePaddingRight()[pri:0, instance:test.UIValidationTestCases@5f341870]" name="validatePaddingRight" duration-ms="185" started-at="2017-05-28T20:51:26Z" finished-at="2017-05-28T20:51:26Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:test.UIValidationTestCases@553f17c]" name="getResult" is-config="true" duration-ms="0" started-at="2017-06-10T22:08:11Z" finished-at="2017-06-10T22:08:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validatePaddingLeft status=SUCCESS method=UIValidationTestCases.validatePaddingLeft()[pri:0, instance:test.UIValidationTestCases@553f17c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="validatePaddingRight()[pri:0, instance:test.UIValidationTestCases@553f17c]" name="validatePaddingRight" duration-ms="44" started-at="2017-06-10T22:08:11Z" finished-at="2017-06-10T22:08:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validatePaddingRight -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:test.UIValidationTestCases@5f341870]" name="getResult" is-config="true" duration-ms="1" started-at="2017-05-28T20:51:26Z" finished-at="2017-05-28T20:51:26Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:test.UIValidationTestCases@553f17c]" name="getResult" is-config="true" duration-ms="1" started-at="2017-06-10T22:08:11Z" finished-at="2017-06-10T22:08:11Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=validatePaddingRight status=SUCCESS method=UIValidationTestCases.validatePaddingRight()[pri:0, instance:test.UIValidationTestCases@5f341870] output={null}]]]>
+                <![CDATA[[TestResult name=validatePaddingRight status=SUCCESS method=UIValidationTestCases.validatePaddingRight()[pri:0, instance:test.UIValidationTestCases@553f17c] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="validatePaddingTop()[pri:0, instance:test.UIValidationTestCases@5f341870]" name="validatePaddingTop" duration-ms="180" started-at="2017-05-28T20:51:26Z" finished-at="2017-05-28T20:51:26Z">
+        <test-method status="PASS" signature="validatePaddingTop()[pri:0, instance:test.UIValidationTestCases@553f17c]" name="validatePaddingTop" duration-ms="33" started-at="2017-06-10T22:08:11Z" finished-at="2017-06-10T22:08:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validatePaddingTop -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:test.UIValidationTestCases@5f341870]" name="getResult" is-config="true" duration-ms="0" started-at="2017-05-28T20:51:26Z" finished-at="2017-05-28T20:51:26Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:test.UIValidationTestCases@553f17c]" name="getResult" is-config="true" duration-ms="1" started-at="2017-06-10T22:08:11Z" finished-at="2017-06-10T22:08:11Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=validatePaddingTop status=SUCCESS method=UIValidationTestCases.validatePaddingTop()[pri:0, instance:test.UIValidationTestCases@5f341870] output={null}]]]>
+                <![CDATA[[TestResult name=validatePaddingTop status=SUCCESS method=UIValidationTestCases.validatePaddingTop()[pri:0, instance:test.UIValidationTestCases@553f17c] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:test.UIValidationTestCases@5f341870]" name="afterSuite" is-config="true" duration-ms="2073" started-at="2017-05-28T20:51:26Z" finished-at="2017-05-28T20:51:28Z">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:test.UIValidationTestCases@553f17c]" name="afterSuite" is-config="true" duration-ms="112" started-at="2017-06-10T22:08:11Z" finished-at="2017-06-10T22:08:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-        <test-method status="PASS" signature="cleanUp()[pri:0, instance:test.UIValidationTestCases@5f341870]" name="cleanUp" is-config="true" duration-ms="476" started-at="2017-05-28T20:51:28Z" finished-at="2017-05-28T20:51:29Z">
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:test.UIValidationTestCases@553f17c]" name="cleanUp" is-config="true" duration-ms="298" started-at="2017-06-10T22:08:11Z" finished-at="2017-06-10T22:08:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanUp -->

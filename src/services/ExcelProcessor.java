@@ -109,6 +109,14 @@ public class ExcelProcessor
 						record.setPaddingRight(cell.getStringCellValue());
 						break;
 
+					case 11:
+						record.setxLocation(Integer.parseInt(cell.getStringCellValue()));;
+						break;
+
+					case 12:
+						record.setyLocation(Integer.parseInt(cell.getStringCellValue()));
+						break;
+
 					default:
 						break;
 					}

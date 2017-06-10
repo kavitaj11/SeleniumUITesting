@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">7 methods,   7 passed</span>
+                    <span class="method-stats">8 methods,   8 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -113,6 +113,11 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="test.UIValidationTestCases" hash-for-method="validateFontSize">validateFontSize</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="test.UIValidationTestCases" hash-for-method="validateLocation">validateLocation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -172,6 +177,13 @@
                   <a name="validateFontSize">
                   </a> <!-- validateFontSize -->
                   <span class="method-name">validateFontSize</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateLocation">
+                  </a> <!-- validateLocation -->
+                  <span class="method-name">validateLocation</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -256,40 +268,44 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(7);
+data.addRows(8);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'validateColor')
 data.setCell(0, 2, 'test.UIValidationTestCases')
-data.setCell(0, 3, 955);
+data.setCell(0, 3, 596);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'validatePaddingLeft')
+data.setCell(1, 1, 'validateLocation')
 data.setCell(1, 2, 'test.UIValidationTestCases')
-data.setCell(1, 3, 250);
+data.setCell(1, 3, 78);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'validateFontFamily1')
+data.setCell(2, 1, 'validatePaddingBottom')
 data.setCell(2, 2, 'test.UIValidationTestCases')
-data.setCell(2, 3, 187);
+data.setCell(2, 3, 65);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'validatePaddingRight')
 data.setCell(3, 2, 'test.UIValidationTestCases')
-data.setCell(3, 3, 185);
+data.setCell(3, 3, 44);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'validateFontSize')
+data.setCell(4, 1, 'validatePaddingLeft')
 data.setCell(4, 2, 'test.UIValidationTestCases')
-data.setCell(4, 3, 184);
+data.setCell(4, 3, 43);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'validatePaddingTop')
+data.setCell(5, 1, 'validateFontFamily1')
 data.setCell(5, 2, 'test.UIValidationTestCases')
-data.setCell(5, 3, 180);
+data.setCell(5, 3, 42);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'validatePaddingBottom')
+data.setCell(6, 1, 'validateFontSize')
 data.setCell(6, 2, 'test.UIValidationTestCases')
-data.setCell(6, 3, 175);
+data.setCell(6, 3, 38);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'validatePaddingTop')
+data.setCell(7, 2, 'test.UIValidationTestCases')
+data.setCell(7, 3, 33);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 seconds</span>
+              <span class="suite-total-time">Total running time: 939 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -322,71 +338,79 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">beforeSuite</span>
-                <span class="method-start">276 ms</span>
+                <span class="method-start">205 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">validateColor</span>
-                <span class="method-start">26526 ms</span>
+                <span class="method-start">26300 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=validateColor status=SUCCESS method=UIValidationTestCases.validateColor()[pri:0, in...)</span>
-                <span class="method-start">27482 ms</span>
+                <span class="method-start">26897 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">validateFontFamily1</span>
-                <span class="method-start">27493 ms</span>
+                <span class="method-start">26906 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=validateFontFamily1 status=SUCCESS method=UIValidationTestCases.validateFontFamily1...)</span>
-                <span class="method-start">27681 ms</span>
+                <span class="method-start">26949 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">validateFontSize</span>
-                <span class="method-start">27682 ms</span>
+                <span class="method-start">26950 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=validateFontSize status=SUCCESS method=UIValidationTestCases.validateFontSize()[pri...)</span>
-                <span class="method-start">27867 ms</span>
+                <span class="method-start">26989 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">validateLocation</span>
+                <span class="method-start">26994 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=validateLocation status=SUCCESS method=UIValidationTestCases.validateLocation()[pri...)</span>
+                <span class="method-start">27077 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">validatePaddingBottom</span>
-                <span class="method-start">27868 ms</span>
+                <span class="method-start">27078 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=validatePaddingBottom status=SUCCESS method=UIValidationTestCases.validatePaddingBo...)</span>
-                <span class="method-start">28043 ms</span>
+                <span class="method-start">27146 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">validatePaddingLeft</span>
-                <span class="method-start">28044 ms</span>
+                <span class="method-start">27146 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=validatePaddingLeft status=SUCCESS method=UIValidationTestCases.validatePaddingLeft...)</span>
-                <span class="method-start">28296 ms</span>
+                <span class="method-start">27190 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">validatePaddingRight</span>
-                <span class="method-start">28296 ms</span>
+                <span class="method-start">27190 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=validatePaddingRight status=SUCCESS method=UIValidationTestCases.validatePaddingRig...)</span>
-                <span class="method-start">28483 ms</span>
+                <span class="method-start">27238 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">validatePaddingTop</span>
-                <span class="method-start">28484 ms</span>
+                <span class="method-start">27239 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">afterSuite</span>
-                <span class="method-start">28665 ms</span>
-              </div> <!-- configuration-class after -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=validatePaddingTop status=SUCCESS method=UIValidationTestCases.validatePaddingTop()...)</span>
-                <span class="method-start">28665 ms</span>
+                <span class="method-start">27277 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">afterSuite</span>
+                <span class="method-start">27278 ms</span>
+              </div> <!-- configuration-class after -->
               <div class="configuration-suite after">
                 <span class="method-name">cleanUp</span>
-                <span class="method-start">30770 ms</span>
+                <span class="method-start">27425 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

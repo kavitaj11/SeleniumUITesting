@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.LinkedHashMap;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -43,7 +44,10 @@ public class UIValidationTestCases extends GenerateExtentReports
 		setupBrowser();
 
 		//Opening New Page
+
 		Browser_session.get("https://www.facebook.com/");
+		Browser_session.findElement(By.tagName("html")).sendKeys(Keys.F11);
+		//Browser_session.manage().window().fullscreen();
 
 	}
 
@@ -149,6 +153,8 @@ public class UIValidationTestCases extends GenerateExtentReports
 			Assert.assertTrue(CompareValues.verifyPadding(webElement.getCssValue("padding-top"), record.getPaddingTop(),"Top"),
 					"Failed For Web Element :"+record.elementName +" Expected Value :"+record.getPaddingTop()+
 					" Actual Value :"+webElement.getCssValue("padding-top"));
+
+
 		}
 	}
 
@@ -229,6 +235,40 @@ public class UIValidationTestCases extends GenerateExtentReports
 
 		}
 	}
+
+
+	@Test
+	/**
+	 *
+	 * Validate WebElement Location
+	 */
+	public void validateLocation()
+	{
+		test=extent.createTest("Validate Location");
+
+		//Storing Excel Data As LinkedHashMap
+		LinkedHashMap dataMap=ExcelProcessor.readExcel("C:\\Workspace\\Personal\\SeleniumUITesting\\TestData\\Test.xlsx","Test");
+
+
+		for(Object key :dataMap.keySet())
+		{
+			Record record=(Record) dataMap.get(key);
+			WebElement webElement=Browser_session.findElement(By.id(record.getElementFindByValue()));
+
+			//Validating X Location
+			Assert.assertTrue(CompareValues.verifyXLocation(webElement.getLocation().getX(), record.getxLocation()),
+					"Failed For Web Element :"+record.elementName +" Expected Value :"+record.getxLocation()+
+					" Actual Value :"+webElement.getLocation().getX());
+
+
+			//Validating Y Location
+			Assert.assertTrue(CompareValues.verifyXLocation(webElement.getLocation().getY(), record.getyLocation()),
+					"Failed For Web Element :"+record.elementName +" Expected Value :"+record.getyLocation()+
+					" Actual Value :"+webElement.getLocation().getY());
+
+		}
+	}
+
 
 
 

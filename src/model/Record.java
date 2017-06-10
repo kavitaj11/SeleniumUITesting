@@ -16,7 +16,21 @@ public class Record {
 	public String bottomObject;
 	public String leftObject;
 	public String rightObject;
+	public int xLocation;
+	public int yLocation;
 
+	public int getxLocation() {
+		return xLocation;
+	}
+	public void setxLocation(int xLocation) {
+		this.xLocation = xLocation;
+	}
+	public int getyLocation() {
+		return yLocation;
+	}
+	public void setyLocation(int yLocation) {
+		this.yLocation = yLocation;
+	}
 	public String getElementName() {
 		return elementName;
 	}
